@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
+  }
+  
+  html{
+    font-family: "Puritan", sans-serif !important;
+  }
+  
+  body {
+    color: var(--foreground);
+    background: var(--background);
+  }
+  
+  @layer utilities {
+    .text-balance {
+      text-wrap: balance;
+    }
+  }
+  
+  
+  .divider{
+    overflow:hidden;
+    position:relative;
+    }
+    .divider::before{ 
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    background-size: 90px 100%;
+    background-position: 0% 50%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.25 381" preserveAspectRatio="none"><g fill="%2360abf0"><path d="M8.47 0l33.86 381H0V0z"/><path d="M33.87 0l25.4 381H0V0z" opacity=".33"/><path d="M59.27 0l17.98 381H0V0z" opacity=".33"/></g></svg>'); 
+    }

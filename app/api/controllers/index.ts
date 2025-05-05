@@ -1,0 +1,5 @@
+export * from './deleteRegisterFromCollection'
+export * from './getAllRegs'
+export * from './registerAct'
+export * from './updateAct'
+export * from './printBauAct'
